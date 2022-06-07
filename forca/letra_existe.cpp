@@ -1,13 +1,16 @@
 #include "letra_existe.hpp"
-
-bool letra_existe(char chute, std::string& palavra_secreta)
+namespace Forca 
 {
-	for (char letra : palavra_secreta)
+	bool letra_existe(char chute, std::string& palavra_secreta)
 	{
-		if (chute == letra)
+		for (char letra : palavra_secreta)
 		{
-			return true;
+			if (chute == letra)
+			{
+				return true;
+			}
 		}
+		return false;
 	}
-	return false;
+
 }

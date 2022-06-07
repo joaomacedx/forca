@@ -1,3 +1,6 @@
 #include <vector>
 #include <map>
-void chuta(std::map<char, bool>& chutou, std::vector<char>& chutes_errados, std::string& palavra_secreta);
+namespace Forca
+{
+	void chuta(std::map<char, bool>& chutou, std::vector<char>& chutes_errados, std::string& palavra_secreta);
+}

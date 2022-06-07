@@ -14,6 +14,7 @@
 #include "nao_acertou.hpp"
 
 using namespace std;
+using namespace Forca;
 
 static string palavra_secreta;
 static map<char, bool> chutou;

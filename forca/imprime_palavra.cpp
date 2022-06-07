@@ -1,18 +1,21 @@
 #include <iostream>
 #include "imprime_palavra.hpp"
 
-void imprime_palavra(std::string palavra_secreta, std::map<char, bool> chutou) 
+namespace Forca
 {
-	for (char letra : palavra_secreta)
+	void imprime_palavra(std::string palavra_secreta, std::map<char, bool> chutou)
 	{
-		if (chutou[letra])
+		for (char letra : palavra_secreta)
 		{
-			std::cout << letra << " ";
+			if (chutou[letra])
+			{
+				std::cout << letra << " ";
+			}
+			else
+			{
+				std::cout << "_ ";
+			}
 		}
-		else
-		{
-			std::cout << "_ ";
-		}
+		std::cout << std::endl;
 	}
-	std::cout << std::endl;
 }
